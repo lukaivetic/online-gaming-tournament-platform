@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002366; 
+    color: #fff; 
+
+.container {
+    width: 90%; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-top: 60px;
+    position: relative;
+}
+
+section h2 {
+    color: #ffd700; 
+    text-align: center; 
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+section h2::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: calc(100% - 40px); 
+    height: 4px;
+    background-color: #ffd700;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.small-image {
+    max-width: 577px; 
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#turniri-slideshow {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#slideshow-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center; 
+}
+
+.slide {
+    flex: 0 0 auto; 
+    margin: 0 10px; 
+    max-width: 577px; 
+    text-align: center;
+}
+
+.slide img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#turniri-slideshow:hover #slideshow-container {
+    animation-play-state: paused;
+}
+
+#turniri-slideshow h2 {
+    margin-top: -63px; 
+}
+
+}

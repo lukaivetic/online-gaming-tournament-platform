@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforma za organizovanje online turnira u video igrama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Platforma za organizovanje online turnira u video igrama</h1>
+            <nav>
+                <ul>
+                    <li><a href="page.html">Početna</a></li>
+                    <li><a href="page1.html">Turniri</a></li>
+                    <li><a href="about.html">O nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="turniri-slideshow">
+                <h2>Nadolazeći Turniri</h2>
+                <div id="slideshow-container">
+                    <div class="slide">
+                        <img src="turnir1.jpg" alt="Call of Duty: Warzone">
+                        <p>Call of Duty: Warzone - 15.06.2024</p>
+                    </div>
+                    <div class="slide">
+                        <img src="turnir2.jpg" alt="League of Legends: Clash">
+                        <p>League of Legends: Clash - 20.06.2024</p>
+                    </div>
+                    <div class="slide">
+                        <img src="turnir3.jpg" alt="EA SPORTS FC 24 - FIFA 24">
+                        <p>EA SPORTS FC 24 - FIFA 24 - 25.06.2024</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Najnovije vesti</h2>
+                <article>
+                    <h3>Uskoro novi turnir: Apex Legends</h3>
+                    <p>Uzbuđeni smo što možemo da najavimo naš najnoviji turnir u Apex Legends! Okupite svoj tim i registrujte se sada.</p>
+                    <img id="small-image" src="apex-legends-listing-thumb-01-ps4-en-29oct20.png" alt="Apex Legends Tournament" class="small-image">
+                </article>                
+            </section>
+            <section>
+                <h2>Prijava za turnir</h2>
+                <form id="turnir-forma">
+                    <label for="username">Korisničko ime:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="password">Lozinka:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="igrica">Izaberite igricu:</label><br>
+                    <input type="checkbox" id="game1" name="igrica" value="Fortnite">
+                    <label for="game1">Fortnite</label><br>
+                    <input type="checkbox" id="game2" name="igrica" value="Valorant">
+                    <label for="game2">Valorant</label><br>
+                    <input type="checkbox" id="game3" name="igrica" value="Overwatch">
+                    <label for="game3">Overwatch</label><br>
+                    <input type="checkbox" id="game4" name="igrica" value="Call of Duty: Warzone">
+                    <label for="game4">Call of Duty: Warzone</label><br>
+                    <input type="checkbox" id="game5" name="igrica" value="League of Legends">
+                    <label for="game5">League of Legends</label><br>
+                    <input type="checkbox" id="game6" name="igrica" value="Fifa 24">
+                    <label for="game6">Fifa 24</label><br>
+                    <input type="submit" value="Prijavi se">
+                </form>
+                <div id="error-message" style="color: red;"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Platforma za organizovanje online turnira u video igrama. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
